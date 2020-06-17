@@ -1,0 +1,121 @@
+@import url('http://fonts.googleapis.com/css?family=Teko');
+@import url('http://fonts.googleapis.com/css?family=Oswald');
+
+body{
+
+}
+
+.item1{
+    grid-area: names;
+}
+
+.item2{
+    grid-area: school;
+}
+.item3{
+    grid-area: age;
+}
+.item4{
+    grid-area: height;
+}
+.item5{
+    grid-area: weight;
+}
+.item6{
+    grid-area: position;
+}
+.item7{
+    grid-area: fav-player;
+}
+.item8{
+    grid-area: image;
+}
+
+.item9{
+    grid-area: snames;
+}
+.item10{
+    grid-area: simage;
+}
+
+.grid-container-active {
+    display: grid;
+    position: relative;
+    grid-template-areas: 
+    'names  names   image   image'
+    'school school  image   image'
+    'age    age     image   image'
+    'height height  image   image'
+    'weight weight  image   image'
+    'position   position    image   image'
+    'fav-player fav-player  image   image';
+    height: 700px;
+    width: 584px;
+    background-color: #7e7e7e;
+    box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    line-height: 2.8rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+#label{
+    font-size: 16px; 
+    font-weight: medium; 
+    font-family: oswald;
+}
+
+#detail{
+    color: black; 
+    font-weight: bold; 
+    font-size: 44px; 
+    font-family: teko;
+}
+
+#label-name{
+    font-size: 28px; 
+    font-weight: medium; 
+    font-family: oswald;  
+}
+
+#detail-surname{
+    color: black; 
+    font-weight: bold; 
+    font-size: 52px; 
+    font-family: teko;
+}
+
+#player-image{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 91%;
+}
+
+.card-container{
+    display: flex;
+    
+}
+
+.grid-container-inactive {
+    display: grid;
+    position: relative;
+    grid-template-areas: 
+    'snames  simage   simage   simage'
+    'simage simage  simage   simage'
+    'simage    simage     simage   simage'
+    'smage simage  simage   simage'
+    'simage simage  simage   simage'
+    'simage   simage    simage   simage'
+    'simage simage  simage   simage';
+    height: 350px;
+    width: 265px;
+    background-color: #7e7e7e;
+    box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    line-height: 2.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
